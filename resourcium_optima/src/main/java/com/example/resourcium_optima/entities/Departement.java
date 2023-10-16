@@ -1,18 +1,16 @@
 package com.example.resourcium_optima.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "departement")
+@Table(name = "departements")
 @NoArgsConstructor
 public class Departement {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
 
@@ -31,8 +29,7 @@ public class Departement {
     @Setter
     private String chefDepartement;
 
-    public Departement(int id, String name, String description, String chefDepartement) {
-        this.id = id;
+    public Departement(String name, String description, String chefDepartement) {
         this.name = name;
         this.description = description;
         this.chefDepartement = chefDepartement;

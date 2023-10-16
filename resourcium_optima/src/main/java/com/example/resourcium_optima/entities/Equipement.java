@@ -1,9 +1,6 @@
 package com.example.resourcium_optima.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,10 +8,11 @@ import lombok.Setter;
 import java.util.Date;
 
 @Entity
-@Table(name = "equipement")
+@Table(name = "equipements")
 @NoArgsConstructor
 public class Equipement {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
 
@@ -33,20 +31,19 @@ public class Equipement {
     @Column(name = "dateBuyed")
     @Getter
     @Setter
-    private Date dateBuyed;
+    private String dateBuyed;
 
     @Column(name = "dateOfMaintain")
     @Getter
     @Setter
-    private Date dateOfMaintain;
+    private String dateOfMaintain;
 
     @Column(name = "state")
     @Getter
     @Setter
     private State state;
 
-    public Equipement(int id, String name, Type type, Date dateBuyed, Date dateOfMaintain, State state) {
-        this.id = id;
+    public Equipement(String name, Type type, String dateBuyed, String dateOfMaintain, State state) {
         this.name = name;
         this.type = type;
         this.dateBuyed = dateBuyed;

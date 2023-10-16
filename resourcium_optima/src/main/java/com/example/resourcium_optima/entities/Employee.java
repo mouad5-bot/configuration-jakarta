@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Employee {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
 
@@ -44,8 +45,7 @@ public class Employee {
     @Setter
     private Post post;
 
-    public Employee(int id, String userName, String password, String firstName, String lastName, String email, Post post) {
-        this.id = id;
+    public Employee(String userName, String password, String firstName, String lastName, String email, Post post) {
         this.userName = userName;
         this.password = password;
         this.firstName = firstName;

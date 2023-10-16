@@ -9,7 +9,8 @@
 5. run the project
 
 ## Introduction
-Resourcium Optima" est une application web Java EE qui illustre les étapes essentielles pour créer un projet web avec Jakarta EE, Hibernate et MySQL. Cette entreprise offre une base solide à quiconque se lance dans le développement d'applications web en utilisant ces technologies robustes.
+
+Resourcium Optima est une application web Java EE qui illustre comment mettre en place un projet web de base en utilisant Jakarta EE, Hibernate et MySQL. Ce projet constitue un point de départ pour la création d'applications web avec ces technologies.
 
 ## project structure
 ```├───.idea

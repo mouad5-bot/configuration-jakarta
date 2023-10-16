@@ -15,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Task {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
 
@@ -26,7 +27,7 @@ public class Task {
     @Column(name = "dateLimit")
     @Getter
     @Setter
-    private Date dateLimit;
+    private String dateLimit;
 
     @Column(name = "priority")
     @Getter
@@ -34,17 +35,19 @@ public class Task {
     private String priority;
 
     //@ManyToOne(fetch = FetchType.LAZY)
-    @ManyToOne()
-    @Column(name = "assignedEmployee")
-    @Getter
-    @Setter
-    private Employee assignedEmployee;
 
-    public Task(int id, String description, Date dateLimit, String priority, Employee assignedEmployee) {
-        this.id = id;
+//    @ManyToOne()
+//    @Column(name = "assignedEmployee")
+//    @Getter
+//    @Setter
+//    private Employee assignedEmployee;
+
+
+    public Task(String description, String dateLimit, String priority) {
         this.description = description;
         this.dateLimit = dateLimit;
         this.priority = priority;
-        this.assignedEmployee = assignedEmployee;
+//        this.assignedEmployee = assignedEmployee;
     }
+
 }

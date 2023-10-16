@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="resourcium_optima:war">
+    <output-path>$PROJECT_DIR$/resourcium_optima/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>resourcium_optima</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="resourcium_optima-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="resourcium_optima:war exploded" />
+    </root>
+  </artifact>
+</component>

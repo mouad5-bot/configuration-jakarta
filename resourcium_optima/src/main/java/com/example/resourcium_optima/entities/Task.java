@@ -39,13 +39,6 @@ public class Task {
 
     //@ManyToOne(fetch = FetchType.LAZY)
 
-//    @ManyToOne()
-//    @Column(name = "assignedEmployee")
-//    @Getter
-//    @Setter
-//    private Employee assignedEmployee;
-
-
     public Task(String description, String dateLimit, String priority) {
         this.description = description;
         this.dateLimit = dateLimit;

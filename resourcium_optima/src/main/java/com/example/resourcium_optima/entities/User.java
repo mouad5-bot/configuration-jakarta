@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Entity
-@Table(name = "employees")
+@Table(name = "users")
 @Access(AccessType.FIELD)
 @NoArgsConstructor
 public class User {

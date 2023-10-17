@@ -6,7 +6,6 @@ import com.example.resourcium_optima.entities.*;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import jakarta.persistence.PersistenceContext;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -42,23 +41,47 @@ public class HelloServlet extends HttpServlet {
 
         em.getTransaction().begin();
 
-        Employee employee = new Employee("MFifel", "test123", "mouad", "fifel", "mfifel@gail.com", Post.CHEF_PROJECT);
-        Departement departement = new Departement("math", "this is description", "john" );
-        Equipement equipement = new Equipement("dell", Type.COMPUTERS, "05/11/2023",  "08/08/2022", State.AVAILABLE);
-        Assignement assignement = new Assignement(1 );
-        Task task = new Task("this is task des", "20/12/2021", "xyz" );
+        Role role = new Role("admin");
 
-        //Employee employee = new Employee();
-//        Departement departement = new Departement();
-//        Equipement equipement = new Equipement();
-//        Assignement assignement = new Assignement();
-//        Task task = new Task();
+        User user = new User("MFifel", "test123", "mouad", "fifel", "mfifel@gail.com");
+        User user2 = new User("MFifel2", "test123", "mouad2", "fifel2", "mfifel@gail.com");
 
-        em.persist(employee);
-        em.persist(departement);
-        em.persist(equipement);
-        em.persist(assignement);
-        em.persist(task);
+        Task task1 = new Task("this is task des1", "20/12/2021", "xyz1" );
+        task1.setUser(user);
+        user.addTask(task1);
+
+        Task task2 = new Task("this is task des2", "21/12/2021", "xyz2" );
+        task2.setUser(user);
+        user.addTask(task2);
+
+        user.setRole(role);
+        role.addUser(user);
+
+        user2.setRole(role);
+        role.addUser(user2);
+
+
+        Equipement pc = new Equipement("dell", Type.COMPUTERS, "05/11/2023",  "08/08/2022", State.AVAILABLE);
+        Equipement usb = new Equipement("usb", Type.COMPUTERS, "05/11/2023",  "08/08/2022", State.AVAILABLE);
+
+        user.addEquipement(pc);
+        user2.addEquipement(pc);
+        pc.addUser(user);
+        pc.addUser(user2);
+
+        user.addEquipement(usb);
+        user2.addEquipement(usb);
+        usb.addUser(user);
+        usb.addUser(user2);
+
+
+        em.persist(user);
+        em.persist(user2);
+        em.persist(pc);
+        em.persist(usb);
+        em.persist(task1);
+        em.persist(task2);
+        em.persist(role);
 
         em.getTransaction().commit();
         emf.close();

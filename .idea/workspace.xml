@@ -10,20 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eef4adc-9a2e-483a-ae89-7b946070215c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Assignement.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Assignement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Departement.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Departement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Assignement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Departement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Equipement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,27 +59,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/Desktop/configuration-jakarta&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/Youcode/Desktop/configuration-jakarta",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Youcode\Desktop\configuration-jakarta\resourcium_optima" />
@@ -185,7 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1697310912984</updated>
       <workItem from="1697310914451" duration="12380000" />
-      <workItem from="1697441835005" duration="7594000" />
+      <workItem from="1697441835005" duration="25572000" />
     </task>
     <servers />
   </component>
@@ -202,16 +213,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/HelloServlet.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

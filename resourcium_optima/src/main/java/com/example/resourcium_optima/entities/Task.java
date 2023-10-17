@@ -4,10 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import com.example.resourcium_optima.entities.Employee;
-
-import java.util.Date;
-import java.util.List;
 
 @Entity
 @Table(name = "tasks")
@@ -16,7 +12,8 @@ import java.util.List;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "taskId")
+    @Getter
     private int id;
 
     @Column(name = "description")
@@ -33,6 +30,12 @@ public class Task {
     @Getter
     @Setter
     private String priority;
+
+    @Getter
+    @Setter
+    @ManyToOne
+    @JoinColumn(name = "userId")
+    private User user;
 
     //@ManyToOne(fetch = FetchType.LAZY)
 

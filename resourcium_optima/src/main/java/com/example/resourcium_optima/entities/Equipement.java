@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.util.*;
 
 @Entity
 @Table(name = "equipements")
@@ -13,14 +13,23 @@ import java.util.Date;
 public class Equipement {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "equipementId")
+    @Getter
     private int id;
+
+    @ManyToMany
+    private List<User> users = new ArrayList<>();
+    public List<User> getUsers(){
+        return Collections.unmodifiableList(users);
+    }
+    public void addUser(User user){
+        users.add(user);
+    }
 
     @Column(name = "name")
     @Getter
     @Setter
     private String name;
-
 
 
     @Column(name = "type")

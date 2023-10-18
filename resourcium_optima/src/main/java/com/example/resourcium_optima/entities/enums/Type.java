@@ -1,4 +1,4 @@
-package com.example.resourcium_optima.entities;
+package com.example.resourcium_optima.entities.enums;
 
 public enum Type {
     COMPUTERS,

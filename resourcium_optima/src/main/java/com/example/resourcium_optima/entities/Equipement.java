@@ -1,5 +1,7 @@
 package com.example.resourcium_optima.entities;
 
+import com.example.resourcium_optima.entities.enums.State;
+import com.example.resourcium_optima.entities.enums.Type;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

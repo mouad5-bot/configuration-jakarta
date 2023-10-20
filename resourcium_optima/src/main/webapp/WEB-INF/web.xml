@@ -5,6 +5,11 @@
          version="5.0">
 
         <servlet>
+            <servlet-name>homeServlet</servlet-name>
+            <servlet-class>com.example.resourcium_optima.auth.HomeServlet</servlet-class>
+        </servlet>
+
+        <servlet>
             <servlet-name>loginServlet</servlet-name>
             <servlet-class>com.example.resourcium_optima.auth.LoginServlet</servlet-class>
         </servlet>
@@ -13,6 +18,12 @@
             <servlet-name>registerServlet</servlet-name>
             <servlet-class>com.example.resourcium_optima.auth.RegisterServlet</servlet-class>
         </servlet>
+
+
+        <servlet-mapping>
+            <servlet-name>homeServlet</servlet-name>
+            <url-pattern>/home.py</url-pattern>
+        </servlet-mapping>
 
         <servlet-mapping>
             <servlet-name>loginServlet</servlet-name>

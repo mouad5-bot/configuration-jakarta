@@ -30,11 +30,6 @@ public class User {
         equipements.add(equipement);
     }
 
-    @Column(name = "userName")
-    @Getter
-    @Setter
-    private String userName;
-
     @Column(name = "password")
     @Getter
     @Setter
@@ -72,11 +67,10 @@ public class User {
         tasks.add(task);
     }
 
-    public User(String userName, String password, String firstName, String lastName, String email) {
-        this.userName = userName;
-        this.password = password;
+    public User(String firstName,  String lastName, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.password = password;
     }
 }

@@ -8,21 +8,21 @@ public class AuthService {
 
     private AuthRepository authRepository = new AuthRepository();
     public void register(User user) {
-        validate(user);
+        registerValidation(user);
         authRepository.save(user);
     }
 
     public Optional<User> login(String email, String password) throws Exception{
-        if (!validation(email, password))
+        if (!loginValidation(email, password))
             throw new IllegalArgumentException("invalid inputs !");
-        return authRepository.checkDataInDb(email, password);
+        return authRepository.checkDataOfLoginInDb(email, password);
     }
 
-    private void validate(User user) {
+    private void registerValidation(User user) {
         // TODO:   validation of filds, empty
     }
 
-    private boolean validation(String email, String password){
+    private boolean loginValidation(String email, String password){
         // TODO
         return true;
     }

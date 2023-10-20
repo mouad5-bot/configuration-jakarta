@@ -18,15 +18,9 @@ public class Connection extends HttpServlet {
     EntityManager em = emf.createEntityManager();
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
-        try {
+    public void init() {
             em.getTransaction().begin();
             emf.close();
-        } catch (Exception e) {
-            response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-            e.printStackTrace();
-        }
     }
 
     public void destroy() {

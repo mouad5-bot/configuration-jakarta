@@ -12,19 +12,18 @@ public class AuthRepository {
     private EntityManager em = emf.createEntityManager();
 
     public void save(User user){
+        em.getTransaction().begin();
+        em.persist(user);
+        em.getTransaction().commit();
     }
 
-    public Optional<User> checkDataInDb(String email, String password) {
-       try{
-           User user = em.createQuery("SELECT u FROM User u WHERE u.email = :email AND u.password = :password", User.class)
+    public Optional<User> checkDataOfLoginInDb(String email, String password) {
+
+      return  em.createQuery("SELECT u FROM User u WHERE u.email = :email AND u.password = :password", User.class)
                    .setParameter("password", password)
                    .setParameter("email", email)
-                   .getSingleResult();
+                   .getResultStream().findAny();
 
-           return Optional.ofNullable(user);
 
-       } catch (Exception e) {
-           return Optional.empty();
-       }
     }
 }

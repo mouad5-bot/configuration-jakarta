@@ -1,0 +1,28 @@
+/**************** login and register ****************/
+#logo-auth img{
+	width: 70%;
+	}
+	
+#auth-text .title{
+	color: #0087F6;
+}
+
+#auth-text label{
+	color: #384651;
+}
+
+.borderOfLineOfLogin{
+	border: 2px solid rgb(0, 0, 0);
+}
+.container-auth{
+	margin-top: 4rem;
+}
+#homeLogo{
+	width: 5rem;
+	height:5rem;
+}
+div.homeLogo{
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+}

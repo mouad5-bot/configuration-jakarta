@@ -6,6 +6,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -24,15 +25,19 @@ public class LoginServlet extends HttpServlet {
 
         try {
             Optional<User> user = authService.login(email, password);
-
+            //User userEntity = user.orElse(null);
             if (user.isPresent()){
+                HttpSession session = req.getSession(true);
+                session.setAttribute("user",user);
                 req.getRequestDispatcher("landingPage.jsp").forward(req, resp);
             }else {
+                req.setAttribute("error", "Email or password incorrect");
                 req.getRequestDispatcher("login.jsp").forward(req, resp);
             }
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            req.setAttribute("error", e.getLocalizedMessage());
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
         }
     }
 }

@@ -5,12 +5,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <%@include file="/include/head.jsp" %>
+  <%@include file="/include/_head.jsp" %>
   <title>Login</title>
 </head>
 <body>
 
-<%@include file="/include/nav.jsp" %>
+<%@include file="/include/_nav.jsp" %>
 
 <div class="container container-auth">
   <div class="row">
@@ -19,9 +19,16 @@
     </div>
     <div class="col-md-5">
       <div class="card border border-black border-2 p-3" id="auth-text">
-        <div class="h1 m-auto mt-3 mb-3 title">Login
+        <div class="h1 m-auto mt-3 mb-2 title">Login
 
           <hr class="borderOfLineOfLogin"></div>
+
+        <c:if test="${not empty error}">
+          <div class="text-danger text-center mb-2">
+              ${error}
+          </div>
+        </c:if>
+
         <div class="card-body mb-2">
           <form method="POST" action="<c:url value="login.py"/>">
             <div class="row mb-3">
@@ -70,6 +77,6 @@
   </div>
 </div>
 
-<%@include file="/include/footer.jsp" %>
+<%@include file="/include/_footer.jsp" %>
 
 

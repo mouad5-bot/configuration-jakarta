@@ -4,10 +4,10 @@
 <html>
 <head>
     <title> Home page - RO </title>
-    <%@include file="/include/head.jsp" %>
+    <%@include file="/include/_head.jsp" %>
 </head>
 <body>
-    <%@include file="/include/nav.jsp" %>
+    <%@include file="/include/_nav.jsp" %>
 
     <div class="homeLogo" >
         <img src="assets/images/logo.png" alt="logo" id="homeLogo">
@@ -33,4 +33,4 @@
     </div>
 
 
-<%@include file="/include/footer.jsp" %>
+<%@include file="/include/_footer.jsp" %>

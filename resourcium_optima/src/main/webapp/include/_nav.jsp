@@ -1,8 +1,8 @@
 
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light shadow-sm  d-flex justify-content-between" fixed-top>
-        <a class="navbar-brand logo-img ms-5 mt-2" href="#">
-            <img src=""  alt="Ntbadlo | Exchange">
+        <a class="navbar-brand logo-img-nav ms-5 mt-2" href="landingPage.jsp">
+            <img src="assets/images/logo.png"  alt="ro" style="width:2rem;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>

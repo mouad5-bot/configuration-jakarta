@@ -8,13 +8,72 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@include file="/include/head.jsp" %>
+    <%@include file="/include/_head.jsp" %>
     <title>landing page</title>
 </head>
 <body>
 
-<%@include file="/include/nav.jsp" %>
+<%@include file="/include/_nav.jsp" %>
 
+<div class="container">
+    <div class="row justify-content-center mt-5 mb-5 ">
+        <div class="col-6">
+            <div class="card">
+                <div class="row">
+                    <div class="card-body col-sm-4 mt-4">
+                        <h5 class="card-title text-center"> <b> Choose an equipements here  </b></h5>
+                        <br>
+                    </div>
+                </div>
+                <div class="card-footer	">
+                    <form method="POST" action="">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <select name="exchange_product_id" class="form-select" id="reserve">
+<%--                                    @foreach($products as $product)--%>
+                                    <option value="id"> name e</option>
+<%--                                    @endforeach--%>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-6 mt-4">
+                                <button type="button" class="btn btn-primary btn-lg"> Reserve an equipement </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="row">
+                    <div class="card-body col-sm-4 mt-4">
+                        <h5 class="card-title text-center"> <b> Choose your task here  </b></h5>
+                        <br>
+                    </div>
+                </div>
+                <div class="card-footer	">
+                    <form method="POST" action="">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <select name="exchange_product_id" class="form-select" id="exchange_product_id">
+<%--                                    @foreach($products as $product)--%>
+                                    <option value="id"> name e</option>
+<%--                                    @endforeach--%>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-6 mt-4">
+                                <button type="button" class="btn btn-primary btn-lg"> Get task </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-<%@include file="/include/footer.jsp" %>
+<%@include file="/include/_footer.jsp" %>

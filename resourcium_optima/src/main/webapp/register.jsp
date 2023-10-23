@@ -5,12 +5,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <%@include file="/include/head.jsp" %>
+  <%@include file="/include/_head.jsp" %>
   <title>Register</title>
 </head>
 <body>
 
-<%@include file="/include/nav.jsp" %>
+<%@include file="/include/_nav.jsp" %>
 
 
 <div class="container container-auth" id="login">
@@ -75,4 +75,4 @@
   </div>
 </div>
 
-<%@include file="/include/footer.jsp" %>
+<%@include file="/include/_footer.jsp" %>

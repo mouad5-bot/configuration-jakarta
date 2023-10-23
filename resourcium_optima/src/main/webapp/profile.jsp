@@ -8,15 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@include file="/include/head.jsp" %>
-    <title>Title</title>
+    <%@include file="/include/_head.jsp" %>
+    <title>Profile</title>
 </head>
 <body>
-<%@include file="/include/nav.jsp" %>
+<%@include file="/include/_nav.jsp" %>
 
 
 <div class="profilTitle m-4 text-center">
-    <h3 > Welcome in you Profile "name" ! </h3>
+    <h3 > Welcome in you Profile <span style="color: brown"> ${user.get().getLastName}</span> ! </h3>
 </div>
 <div>
 
@@ -87,26 +87,36 @@
                         <hr class="w-25%" />
                         <form action="" method="POST">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="mb-4">
-                                        <label class="form-label">Your Name </label>
+                                        <label class="form-label">First Name </label>
                                         <input
                                                 type="text"
                                                 class="form-control"
                                                 name="name"
-                                                value=""
+                                                value="${user.get().getFirstName()}"
                                         />
                                     </div>
                                 </div>
-
-                                <div class="col-md-6">
+                                <div class="col-md-4">
+                                    <div class="mb-4">
+                                        <label class="form-label">Last Name </label>
+                                        <input
+                                                type="text"
+                                                class="form-control"
+                                                name="name"
+                                                value="${user.get().getLastName()}"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
                                     <div class="mb-4 mr-2">
                                         <label class="form-label" >Email </label>
                                         <input
                                                 type="email"
                                                 class="form-control"
                                                 name="email"
-                                                value=""
+                                                value="${user.get().getEmail()}"
                                                 disabled
                                         />
                                     </div>
@@ -217,4 +227,4 @@
 </div>
 </div>
 
-<%@include file="/include/footer.jsp" %>
+<%@include file="/include/_footer.jsp" %>

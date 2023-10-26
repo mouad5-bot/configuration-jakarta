@@ -14,10 +14,11 @@ public class ReservRepo {
     private EntityManager em = emf.createEntityManager();
 
     public void reserve(User user, Equipement equipment){
+        User userdetached = em.merge(user);
             em.getTransaction().begin();
-                user.addEquipement(equipment);
-                equipment.addUser(user);
-            em.persist(user);
+                userdetached.addEquipement(equipment);
+                equipment.addUser(userdetached);
+            em.persist(userdetached);
             em.persist(equipment);
             em.getTransaction().commit();
     }
@@ -28,6 +29,9 @@ public class ReservRepo {
         return allEquipments;
     }
     public Equipement FindEquipementById(long id){
-        return em.find(Equipement.class, id);
+        em.getTransaction().begin();
+        Equipement equipement = em.find(Equipement.class, id);
+        em.getTransaction().commit();
+        return equipement;
     }
 }

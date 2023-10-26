@@ -9,7 +9,7 @@ public class LandingPage  {
 
     User user1 = new User("mo", "xyz", "e@g.c", "psw");
 
-    Equipement equipement1 = new Equipement( "table", Type.JETABLE, "27/09/2023", "10/09/2023", State.AVAILABLE );
+    Equipement equipment1 = new Equipement( "table", Type.JETABLE, "27/09/2023", "10/09/2023", State.AVAILABLE );
 
 
 }

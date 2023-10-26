@@ -8,7 +8,16 @@ import java.util.Optional;
 
 public class AuthService {
 
-    private AuthRepository authRepository = new AuthRepository();
+    private AuthRepository authRepository;
+
+    public AuthService(AuthRepository authRepository) {
+        this.authRepository = authRepository;
+    }
+
+    public AuthService() {
+       authRepository = new AuthRepository();
+    }
+
     public void register(User user, Role role ) {
         registerValidation(user);
         authRepository.save(user, role);

@@ -16,7 +16,7 @@
 
 
 <div class="profilTitle m-4 text-center">
-    <h3 > Welcome in you Profile <span style="color: brown"> ${user.get().getFirstName()} </span> ! </h3>
+    <h3 > Welcome in you Profile <span style="color: brown"> ${user.getFirstName()} </span> ! </h3>
 </div>
 <div>
 
@@ -92,7 +92,7 @@
                                                 type="text"
                                                 class="form-control"
                                                 name="name"
-                                                value="${user.get().getFirstName()}"
+                                                value="${user.getFirstName()}"
                                         />
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@
                                                 type="text"
                                                 class="form-control"
                                                 name="name"
-                                                value="${user.get().getLastName()}"
+                                                value="${user.getLastName()}"
                                         />
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@
                                                 type="email"
                                                 class="form-control"
                                                 name="email"
-                                                value="${user.get().getEmail()}"
+                                                value="${user.getEmail()}"
                                                 disabled
                                         />
                                     </div>
@@ -180,7 +180,6 @@
                                 <div>
                                     <button
                                             type="submit"
-                                            id="save"
                                             name="save_Changes"
                                             class="btn btn-primary"
                                             onclick="update()"
@@ -209,7 +208,6 @@
                             </div>
                             <button
                                     type="submit"
-                                    id="save"
                                     name="save_Changes"
                                     class="btn btn-danger mt-3"
                                     onclick=""

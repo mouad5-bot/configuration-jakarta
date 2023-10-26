@@ -41,7 +41,7 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-6 mt-4">
-                                <button type="button" class="btn btn-primary btn-lg"> Reserve an equipement </button>
+                                <button type="submit" class="btn btn-primary btn-lg"> Reserve an equipement </button>
                             </div>
                         </div>
                     </form>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-6 mt-4">
-                                <button type="button" class="btn btn-primary btn-lg"> Get task </button>
+                                <button type="submit" class="btn btn-primary btn-lg"> Get task </button>
                             </div>
                         </div>
                     </form>

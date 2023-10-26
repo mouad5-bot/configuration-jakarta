@@ -32,6 +32,8 @@ public class ReservServlet extends HttpServlet {
             int equipment = Integer.parseInt(req.getParameter("reservationRO"));
 
             reservService.check( loggedInUser, equipment);
+
+            req.getRequestDispatcher("landingPage.jsp").forward(req, resp);
         }else{
             req.setAttribute("error", "You are not logged in !!!");
             req.getRequestDispatcher("login.jsp").forward(req, resp);

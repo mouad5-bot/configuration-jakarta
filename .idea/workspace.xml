@@ -10,32 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eef4adc-9a2e-483a-ae89-7b946070215c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/test/java/com/example/resourcium_optima/auth/AuthServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resourcium_optima/src/test/java/com/example/resourcium_optima/reservation/ReservServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/AuthRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/AuthRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/auth/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/classes/LandingPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/config/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/config/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Equipement.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/Equipement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/enums/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/entities/enums/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/include/_nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/include/_nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/landingPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/landingPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/main/webapp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcium_optima/src/test/java/com/example/resourcium_optima/auth/AuthServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/resourcium_optima/src/test/java/com/example/resourcium_optima/auth/AuthServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +101,39 @@
       <recent name="com.example.resourcium_optima.reservation" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.14">
+  <component name="RunManager" selected="JUnit.AuthServiceTest.whenValidDataThenShouldNotThrowError">
+    <configuration name="AuthServiceTest.whenFirstNameIsNullThenThrowError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="resourcium_optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.resourcium_optima.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.resourcium_optima.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.example.resourcium_optima.auth.AuthServiceTest" />
+      <option name="METHOD_NAME" value="whenFirstNameIsNullThenThrowError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceTest.whenValidDataThenShouldNotThrowError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="resourcium_optima" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.resourcium_optima.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.resourcium_optima.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.example.resourcium_optima.auth.AuthServiceTest" />
+      <option name="METHOD_NAME" value="whenValidDataThenShouldNotThrowError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/resourcium_optima_war/index.jsp">
       <method v="2" />
     </configuration>
@@ -222,10 +237,14 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.index.jsp" />
+      <item itemvalue="JUnit.AuthServiceTest.whenFirstNameIsNullThenThrowError" />
+      <item itemvalue="JUnit.AuthServiceTest.whenValidDataThenShouldNotThrowError" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.14" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthServiceTest.whenValidDataThenShouldNotThrowError" />
+        <item itemvalue="JUnit.AuthServiceTest.whenFirstNameIsNullThenThrowError" />
         <item itemvalue="JavaScript Debug.index.jsp" />
       </list>
     </recent_temporary>
@@ -245,7 +264,7 @@
       <workItem from="1697790841398" duration="37642000" />
       <workItem from="1698219795627" duration="19338000" />
       <workItem from="1698275333809" duration="5120000" />
-      <workItem from="1698312810284" duration="11319000" />
+      <workItem from="1698312810284" duration="19492000" />
     </task>
     <servers />
   </component>
@@ -262,5 +281,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservServlet.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservService.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/resourcium_optima/src/main/java/com/example/resourcium_optima/reservation/ReservRepo.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

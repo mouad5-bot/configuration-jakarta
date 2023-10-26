@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
             //User userEntity = user.orElse(null);
             if (user.isPresent()){
                 HttpSession session = req.getSession(true);
-                session.setAttribute("user",user);
+                session.setAttribute("user",user.get());
 
                 ReservRepo reservRepo = new ReservRepo();
                 List<Equipement> allEquipments = reservRepo.getAllEquipments();

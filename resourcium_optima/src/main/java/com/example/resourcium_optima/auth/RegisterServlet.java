@@ -1,5 +1,6 @@
 package com.example.resourcium_optima.auth;
 
+import com.example.resourcium_optima.config.Connection;
 import com.example.resourcium_optima.entities.Role;
 import com.example.resourcium_optima.entities.User;
 import jakarta.servlet.ServletException;
@@ -12,6 +13,7 @@ import org.mindrot.jbcrypt.BCrypt;
 import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
     private AuthService authService = new AuthService();
+    private AuthRepository authRepository = new AuthRepository();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -20,7 +22,6 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
 
         User user = new User();
         Role role = new Role("employee");

@@ -4,13 +4,13 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
 
-<!--    <welcome-file-list>-->
-<!--        <welcome-file>login.jsp</welcome-file>-->
-<!--    </welcome-file-list>-->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 
         <servlet>
-            <servlet-name>homeServlet</servlet-name>
-            <servlet-class>com.example.resourcium_optima.classes.IndexServlet</servlet-class>
+            <servlet-name>reservServlet</servlet-name>
+            <servlet-class>com.example.resourcium_optima.reservation.ReservServlet</servlet-class>
         </servlet>
 
         <servlet>
@@ -24,8 +24,8 @@
         </servlet>
 
         <servlet-mapping>
-            <servlet-name>homeServlet</servlet-name>
-            <url-pattern>/home.py</url-pattern>
+            <servlet-name>reservServlet</servlet-name>
+            <url-pattern>/reservation.py</url-pattern>
         </servlet-mapping>
 
         <servlet-mapping>

@@ -62,3 +62,4 @@ public class Equipement {
         this.state = state;
     }
 }
+

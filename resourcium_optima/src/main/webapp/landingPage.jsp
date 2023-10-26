@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Youcode
@@ -26,14 +27,16 @@
                     </div>
                 </div>
                 <div class="card-footer	">
-                    <form method="POST" action="">
+                    <form method="POST" action="<c:url value="reservation.py"/>">
                         <div class="row justify-content-center">
                             <div class="col-8">
-                                <select name="exchange_product_id" class="form-select" id="reserve">
-<%--                                    @foreach($products as $product)--%>
-                                    <option value="id"> name e</option>
-<%--                                    @endforeach--%>
+                                <c:if test="${not empty equipments}">
+                                <select name="reservationRO" class="form-select" id="reserve">
+                                        <c:forEach items="${equipments}" var="equipment">
+                                            <option value="${equipment.id}">${equipment.name}</option>
+                                        </c:forEach>
                                 </select>
+                                </c:if>
                             </div>
                         </div>
                         <div class="row justify-content-center">

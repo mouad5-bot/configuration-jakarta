@@ -7,7 +7,7 @@ import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "index.jsp", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;
 
@@ -19,6 +19,7 @@ public class HelloServlet extends HttpServlet {
 
         try {
 
+            System.out.println(message);
 
         } catch (Exception e) {
             response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

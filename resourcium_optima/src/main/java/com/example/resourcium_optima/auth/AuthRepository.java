@@ -32,4 +32,8 @@ public class AuthRepository {
                    .getResultStream().findAny();
     }
 
+    public Role findRoleByName(String name){
+           return em.find(Role.class, name);
+    }
+
 }

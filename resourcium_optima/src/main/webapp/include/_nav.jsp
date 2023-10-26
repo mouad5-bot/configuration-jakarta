@@ -12,10 +12,10 @@
 
             <ul class="navbar-nav me-auto ms-auto ">
                 <li class="nav-item me-4">
-                    <a class="nav-link">Home</a>
+                    <a class="nav-link" href="landingPage.jsp">Home</a>
                 </li>
                 <li class="nav-item me-4">
-                    <a class="nav-link" href="landingPage.jsp">Dashboard</a>
+                    <a class="nav-link" href="">Dashboard</a>
                 </li>
                 <li class="nav-item me-4">
                     <a class="nav-link" href="">about</a>

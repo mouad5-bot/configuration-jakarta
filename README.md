@@ -13,29 +13,64 @@
 Resourcium Optima est une application web Java EE qui illustre comment mettre en place un projet web de base en utilisant Jakarta EE, Hibernate et MySQL. Ce projet constitue un point de départ pour la création d'applications web avec ces technologies.
 
 ## project structure
-```├───.idea
-│   ├───artifacts
-│   └───libraries
+```
+├───.idea
+│   └───artifacts
 ├───.mvn
 │   └───wrapper
 ├───src
-│   ├───main
-│   │   ├───java
-│   │   │   └───com
-│   │   │       └───example
-│   │   │           └───resourcium_optima
-│   │   │               └───entities
-│   │   ├───resources
-│   │   │   └───META-INF
-        └───WEB-INF
-            ├───classes
-            │   ├───com
+│   └───main
+│       ├───java
+│       │   └───com
+│       │       └───example
+│       │           └───resourcium_optima
+│       │               ├───auth
+│       │               ├───classes
+│       │               ├───config
+│       │               └───entities
+│       │                   └───enums
+│       ├───resources
+│       │   └───META-INF
+│       └───webapp
+│           ├───assets
+│           │   ├───css
+│           │   ├───images
+│           │   └───js
+│           ├───include
+│           └───WEB-INF
+└───target
+    ├───classes
+    │   ├───com
+    │   │   └───example
+    │   │       └───resourcium_optima
+    │   │           ├───auth
+    │   │           ├───classes
+    │   │           ├───config
+    │   │           └───entities
+    │   │               └───enums
+    │   └───META-INF
+    ├───generated-sources
+    │   └───annotations
+    ├───maven-archiver
+    ├───maven-status
+    │   └───maven-compiler-plugin
+    │       └───compile
+    │           └───default-compile
+    └───resourcium_optima-1.0-SNAPSHOT
+        ├───assets
+        │   ├───css
+        │   ├───images
+        │   └───js
             │   │   └───example
             │   │       └───resourcium_optima
+            │   │           ├───auth
+            │   │           ├───classes
+            │   │           ├───config
+            │   │           └───entities
+            │   │               └───enums
             │   └───META-INF
             └───lib
-├── pom.xml                                         
-└── README.md
+
 ```
 ## dependencies
 Le projet utilise les dépendances suivantes gérées par Maven :

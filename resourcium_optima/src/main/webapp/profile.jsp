@@ -16,7 +16,7 @@
 
 
 <div class="profilTitle m-4 text-center">
-    <h3 > Welcome in you Profile <span style="color: brown"> ${user.get().getLastName}</span> ! </h3>
+    <h3 > Welcome in you Profile <span style="color: brown"> ${user.get().getFirstName()} </span> ! </h3>
 </div>
 <div>
 
@@ -36,7 +36,6 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">image</th>
                                     <th scope="col">Name </th>
                                     <th scope="col">Category</th>
                                     <th scope="col">Location</th>
@@ -47,8 +46,7 @@
                                 <tbody>
                                 <tr id="1">
                                     <th scope="row"> 1</th>
-                                    <td> <img src="" alt="" style="width:2rem;" > </td>
-                                    <td> </td>
+                                    <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>

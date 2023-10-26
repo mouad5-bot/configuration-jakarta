@@ -1,14 +1,17 @@
 package com.example.resourcium_optima.auth;
 
+import com.example.resourcium_optima.config.Connection;
+import com.example.resourcium_optima.reservation.ReservRepo;
+import com.example.resourcium_optima.entities.Equipement;
 import com.example.resourcium_optima.entities.User;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 public class LoginServlet extends HttpServlet {
@@ -29,6 +32,10 @@ public class LoginServlet extends HttpServlet {
             if (user.isPresent()){
                 HttpSession session = req.getSession(true);
                 session.setAttribute("user",user);
+
+                ReservRepo reservRepo = new ReservRepo();
+                List<Equipement> allEquipments = reservRepo.getAllEquipments();
+                req.setAttribute("equipments", allEquipments);
                 req.getRequestDispatcher("landingPage.jsp").forward(req, resp);
             }else {
                 req.setAttribute("error", "Email or password incorrect");

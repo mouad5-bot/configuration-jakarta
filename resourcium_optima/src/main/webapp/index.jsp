@@ -7,7 +7,6 @@
     <%@include file="/include/_head.jsp" %>
 </head>
 <body>
-    <%@include file="/include/_nav.jsp" %>
 
     <div class="homeLogo" >
         <img src="assets/images/logo.png" alt="logo" id="homeLogo">

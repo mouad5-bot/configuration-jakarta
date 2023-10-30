@@ -10,9 +10,6 @@
 </head>
 <body>
 
-<%@include file="/include/_nav.jsp" %>
-
-
 <div class="container container-auth" id="login">
   <div class="row">
     <div class="col-md-6 d-flex justify-content-center align-items-center" id="logo-auth">

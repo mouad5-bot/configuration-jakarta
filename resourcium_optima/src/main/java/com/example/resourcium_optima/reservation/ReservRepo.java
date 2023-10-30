@@ -6,6 +6,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
+import jakarta.transaction.Transaction;
 
 import java.util.List;
 
@@ -28,10 +29,11 @@ public class ReservRepo {
         List<Equipement> allEquipments = q.getResultList();
         return allEquipments;
     }
+
     public Equipement FindEquipementById(long id){
-        em.getTransaction().begin();
-        Equipement equipement = em.find(Equipement.class, id);
-        em.getTransaction().commit();
+            em.getTransaction().begin();
+            Equipement equipement = em.find(Equipement.class, id);
+            em.getTransaction().commit();
         return equipement;
     }
 }

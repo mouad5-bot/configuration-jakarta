@@ -33,6 +33,10 @@ public class ReservServlet extends HttpServlet {
 
             reservService.check( loggedInUser, equipment);
 
+            ReservRepo reservRepo = new ReservRepo();
+            List<Equipement> allEquipments = reservRepo.getAllEquipments();
+            req.setAttribute("equipments", allEquipments);
+
             req.getRequestDispatcher("landingPage.jsp").forward(req, resp);
         }else{
             req.setAttribute("error", "You are not logged in !!!");

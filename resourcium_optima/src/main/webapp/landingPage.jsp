@@ -30,13 +30,13 @@
                     <form method="POST" action="<c:url value="reservation.py"/>">
                         <div class="row justify-content-center">
                             <div class="col-8">
-                                <c:if test="${not empty equipments}">
+<%--                                <c:if test="${not empty equipments}">--%>
                                 <select name="reservationRO" class="form-select" id="reserve">
                                         <c:forEach items="${equipments}" var="equipment">
                                             <option value="${equipment.id}">${equipment.name}</option>
                                         </c:forEach>
                                 </select>
-                                </c:if>
+<%--                                </c:if>--%>
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -79,4 +79,15 @@
     </div>
 </div>
 
-<%@include file="/include/_footer.jsp" %>
+
+<footer class="footer fixed-bottom text-center">
+    <hr class="border border-dark">
+    <p>&copy; 2023 RO. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
